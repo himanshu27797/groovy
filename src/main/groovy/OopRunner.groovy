@@ -10,9 +10,9 @@ class OopRunner {
         println(student.lastName)  //getter
         println(student.age)       //getter
 
-        def student1 = new Student(firstName: "Helen", lastName: "Black", age: 30)
+        def student1 = new Student(firstName: "Helen", lastName: "Black", age: 30, id: 222)
         println(student1)
-
+        student1.properties.each {print it }
         Student student2 = ["Sveta", "Svetikova", 32]
         println(student2)
 
@@ -21,7 +21,7 @@ class OopRunner {
         println(fn)
         println(ln)
 
-      assert  [student1, student2].collect { it.firstName } == ["Helen","Sveta"]
+        assert [student1, student2].collect { it.firstName } == ["Helen", "Sveta"]
 
     }
 }

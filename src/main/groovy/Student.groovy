@@ -4,7 +4,7 @@ import groovy.transform.TupleConstructor
 //public class default
 @ToString
 @TupleConstructor
-class Student {
+class Student implements WithId {
 
 //private fields default
 
