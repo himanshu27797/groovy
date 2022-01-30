@@ -18,7 +18,7 @@ class MapRunner {
 
 
         //new operator
-        def newMap = ["q": 22, "rt": 99, *:map]
+        def newMap = ["q": 22, "rt": 99, *: map]
         println newMap
 
     }
